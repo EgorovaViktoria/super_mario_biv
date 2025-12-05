@@ -104,7 +104,7 @@ int main() {
 		biv::os::set_cursor_start_position();
 		std::printf("\033[2J\033[3J\033[H"); // Очистка экрана
                 std::fflush(stdout);
-                game_map->refresh();
+                
 		game_map->show();
 		std::this_thread::sleep_for(10ms);
 	} while (
