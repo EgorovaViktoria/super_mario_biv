@@ -13,6 +13,7 @@
 		6. Завершение
 */
 #include <thread>
+#include <cstdio>
 
 #include "console_ui_factory.hpp"
 #include "first_level.hpp"
@@ -41,19 +42,27 @@ int main() {
 		user_input = biv::os::get_user_input();
 		switch (user_input) {
 			case biv::os::UserInput::MAP_LEFT:
-				mario->move_map_left();
-				if (!game.check_static_collisions(mario)) {
-					game.move_map_left();
-				}
-				mario->move_map_right();
-				break;
-			case biv::os::UserInput::MAP_RIGHT:
-				mario->move_map_right();
-				if (!game.check_static_collisions(mario)) {
-					game.move_map_right();
-				}
-				mario->move_map_left();
-				break;
+                                // Пробуем подвинуть Марио
+                                mario->move_map_left();
+                                
+                                // Проверяем столкновения
+                                if (!game.check_static_collisions(mario)) {
+                                    // Если нет столкновений - двигаем уровень
+                                    game.move_map_left();
+                                } else {
+                                    // Если ЕСТЬ столкновение - откатываем движение Марио
+                                    mario->move_map_right();
+                                }
+                                break;
+                        
+                        case biv::os::UserInput::MAP_RIGHT:
+                                mario->move_map_right();
+                                if (!game.check_static_collisions(mario)) {
+                                    game.move_map_right();
+                                } else {
+                                    mario->move_map_left();  // Откат при столкновении
+                                }
+                                break;
 			case biv::os::UserInput::MARIO_JUMP:
 				mario->jump();
 				break;
@@ -93,6 +102,9 @@ int main() {
 		// 4. Обновление изображения на экране
 		game_map->refresh();
 		biv::os::set_cursor_start_position();
+		std::printf("\033[2J\033[3J\033[H"); // Очистка экрана
+                std::fflush(stdout);
+                game_map->refresh();
 		game_map->show();
 		std::this_thread::sleep_for(10ms);
 	} while (

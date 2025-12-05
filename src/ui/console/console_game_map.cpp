@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <cstdio>
+#include <cstring>
 #include <iostream>
 
 using biv::ConsoleGameMap;
@@ -36,7 +37,7 @@ void ConsoleGameMap::clear() noexcept {
 	map[0][width] = '\0';
 	
 	for (int i = 1; i < height - 3; i++) {
-		std::sprintf(map[i], map[0]);
+		std::strcpy(map[i], map[0]);
 	}
 	
 	// Вода
@@ -46,7 +47,7 @@ void ConsoleGameMap::clear() noexcept {
 	map[height - 3][width] = '\0';
 	
 	for (int i = height - 2; i < height; i++) {
-		std::sprintf(map[i], map[height - 3]);
+		std::strcpy(map[i], map[height - 3]);
 	}
 }
 
@@ -81,6 +82,8 @@ void ConsoleGameMap::remove_objs() {
 
 void ConsoleGameMap::show() const noexcept {
 	for (int i = 0; i < height; i++) {
-		std::cout << map[i];
+		std::cout << map[i]<< std::endl;
 	}
 }
+
+
