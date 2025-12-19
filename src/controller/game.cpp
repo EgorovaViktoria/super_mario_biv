@@ -1,5 +1,7 @@
 #include "game.hpp"
 
+#include "game.hpp"
+
 #include <algorithm>
 
 using biv::Game;

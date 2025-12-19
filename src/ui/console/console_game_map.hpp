@@ -12,6 +12,10 @@ namespace biv {
 			
 			std::vector<ConsoleUIObject*> objs;
 			
+			// Флаг, указывающий, что buffer был обновлён и нужно перерисовать экран.
+			// Делается mutable, т.к. show() const, но должно иметь возможность сбрасывать флаг.
+			mutable bool needs_draw = true;
+			
 		public:
 			ConsoleGameMap(const int height, const int width);
 			~ConsoleGameMap();

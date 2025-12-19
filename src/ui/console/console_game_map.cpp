@@ -4,8 +4,9 @@
 #include <cstdio>
 #include <cstring>
 #include <iostream>
+#include <string>
 
-using biv::ConsoleGameMap;
+namespace biv {
 
 ConsoleGameMap::ConsoleGameMap(const int height, const int width) 
 	: GameMap(height, width) {
@@ -16,6 +17,7 @@ ConsoleGameMap::ConsoleGameMap(const int height, const int width)
 	}
 		
 	clear();
+	needs_draw = true;
 }
 
 ConsoleGameMap::~ConsoleGameMap() {
@@ -70,6 +72,9 @@ void ConsoleGameMap::refresh() noexcept {
 			}
 		}
 	}
+
+	// Буфер обновлён — нужно перерисовать при следующем show()
+	needs_draw = true;
 }
 
 void ConsoleGameMap::remove_obj(ConsoleUIObject* obj) {
@@ -81,9 +86,25 @@ void ConsoleGameMap::remove_objs() {
 }
 
 void ConsoleGameMap::show() const noexcept {
-	for (int i = 0; i < height; i++) {
-		std::cout << map[i]<< std::endl;
+	// Если буфер не изменился с последней отрисовки, ничего не печатаем.
+	if (!needs_draw) return;
+
+	// Очистить экран и переместить курсор в начало (полная перерисовка).
+	std::cout << "\x1b[2J\x1b[H";
+
+	// Соберём весь экран в один буфер и выведем единой операцией (меньше мерцания).
+	std::string buffer;
+	buffer.reserve(static_cast<size_t>(height) * (width + 1));
+
+	for (int i = 0; i < height; ++i) {
+		buffer.append(map[i], static_cast<size_t>(width));
+		buffer.push_back('\n');
 	}
+
+	std::cout << buffer << std::flush;
+
+	// Сброс флага — повторные вызовы show() без предварительного refresh() больше не будут печатать.
+	needs_draw = false;
 }
 
-
+} // namespace biv

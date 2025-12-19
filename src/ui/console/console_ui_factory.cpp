@@ -9,8 +9,10 @@ ConsoleUIFactory::ConsoleUIFactory(Game* game) : UIFactory(game) {
 void ConsoleUIFactory::clear_data() {
 	game->remove_objs();
 	game_map->remove_objs();
-	delete mario;
-	mario = nullptr;
+	if (mario != nullptr) {
+		delete mario;
+		mario = nullptr;
+	}
 	boxes.clear();
 	full_boxes.clear();
 	ships.clear();
@@ -53,14 +55,18 @@ void ConsoleUIFactory::create_full_box(
 void ConsoleUIFactory::create_mario(
 	const Coord& top_left, const int width, const int height
 ) {
-	game->remove_collisionable(mario);
-	game->remove_movable(mario);
-	game->remove_mario();
-	game_map->remove_obj(mario);
-	delete mario;
-	mario = nullptr;
-	
+	// Удаляем старого Марио, только если он реально существует.
+	if (mario != nullptr) {
+		game->remove_collisionable(mario);
+		game->remove_movable(mario);
+		game->remove_mario();
+		game_map->remove_obj(mario);
+		delete mario;
+		mario = nullptr;
+	}
+
 	mario = new ConsoleMario(top_left, width, height);
+
 	game->add_collisionable(mario);
 	game->add_movable(mario);
 	game->add_mario(mario);

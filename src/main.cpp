@@ -94,18 +94,24 @@ int main() {
 				mario = ui_factory->get_mario();
 				std::this_thread::sleep_for(1000ms);
 				game.start_level();
+				
 			} else {
 				game.finish();
 			}
 		}
 		
-		// 4. Обновление изображения на экране
-		game_map->refresh();
-		biv::os::set_cursor_start_position();
-		std::printf("\033[2J\033[3J\033[H"); // Очистка экрана
+                // В этом файле заменить блок, отвечающий за отрисовку, на следующий (вместо двойного refresh + полной очистки):
+                // 4. Обновление изображения на экране
+                game_map->refresh();
+
+                // Переместить курсор в начало экрана, НЕ очищая весь буфер терминала.
+                // Полная очистка (\033[2J) вызывает сильное мерцание и очистку scrollback; достаточно "\033[H".
+                biv::os::set_cursor_start_position();
+                std::printf("\033[H");
                 std::fflush(stdout);
-                
-		game_map->show();
+
+                // Вывести карту — при корректной реализации ConsoleGameMap::show() это будет быстрый единый вывод.
+                game_map->show();
 		std::this_thread::sleep_for(10ms);
 	} while (
 		/* 5. Проверка того, не окончена ли игра */ 
