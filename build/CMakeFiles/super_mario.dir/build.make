@@ -167,10 +167,24 @@ CMakeFiles/super_mario.dir/levels/second_level.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/levels/second_level.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/Documents/super_mario/src/levels/second_level.cpp -o CMakeFiles/super_mario.dir/levels/second_level.cpp.s
 
+CMakeFiles/super_mario.dir/levels/third_level.cpp.o: CMakeFiles/super_mario.dir/flags.make
+CMakeFiles/super_mario.dir/levels/third_level.cpp.o: /home/viktoria/Documents/super_mario/src/levels/third_level.cpp
+CMakeFiles/super_mario.dir/levels/third_level.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/super_mario.dir/levels/third_level.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/levels/third_level.cpp.o -MF CMakeFiles/super_mario.dir/levels/third_level.cpp.o.d -o CMakeFiles/super_mario.dir/levels/third_level.cpp.o -c /home/viktoria/Documents/super_mario/src/levels/third_level.cpp
+
+CMakeFiles/super_mario.dir/levels/third_level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/super_mario.dir/levels/third_level.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/Documents/super_mario/src/levels/third_level.cpp > CMakeFiles/super_mario.dir/levels/third_level.cpp.i
+
+CMakeFiles/super_mario.dir/levels/third_level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/levels/third_level.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/Documents/super_mario/src/levels/third_level.cpp -o CMakeFiles/super_mario.dir/levels/third_level.cpp.s
+
 CMakeFiles/super_mario.dir/model/collisionable.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/model/collisionable.cpp.o: /home/viktoria/Documents/super_mario/src/model/collisionable.cpp
 CMakeFiles/super_mario.dir/model/collisionable.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/super_mario.dir/model/collisionable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/super_mario.dir/model/collisionable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/model/collisionable.cpp.o -MF CMakeFiles/super_mario.dir/model/collisionable.cpp.o.d -o CMakeFiles/super_mario.dir/model/collisionable.cpp.o -c /home/viktoria/Documents/super_mario/src/model/collisionable.cpp
 
 CMakeFiles/super_mario.dir/model/collisionable.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/super_mario.dir/model/collisionable.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/model/game_map.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/model/game_map.cpp.o: /home/viktoria/Documents/super_mario/src/model/game_map.cpp
 CMakeFiles/super_mario.dir/model/game_map.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/super_mario.dir/model/game_map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/super_mario.dir/model/game_map.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/model/game_map.cpp.o -MF CMakeFiles/super_mario.dir/model/game_map.cpp.o.d -o CMakeFiles/super_mario.dir/model/game_map.cpp.o -c /home/viktoria/Documents/super_mario/src/model/game_map.cpp
 
 CMakeFiles/super_mario.dir/model/game_map.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/super_mario.dir/model/game_map.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/model/movable.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/model/movable.cpp.o: /home/viktoria/Documents/super_mario/src/model/movable.cpp
 CMakeFiles/super_mario.dir/model/movable.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/super_mario.dir/model/movable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/super_mario.dir/model/movable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/model/movable.cpp.o -MF CMakeFiles/super_mario.dir/model/movable.cpp.o.d -o CMakeFiles/super_mario.dir/model/movable.cpp.o -c /home/viktoria/Documents/super_mario/src/model/movable.cpp
 
 CMakeFiles/super_mario.dir/model/movable.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/super_mario.dir/model/movable.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/model/rect.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/model/rect.cpp.o: /home/viktoria/Documents/super_mario/src/model/rect.cpp
 CMakeFiles/super_mario.dir/model/rect.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/super_mario.dir/model/rect.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/super_mario.dir/model/rect.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/model/rect.cpp.o -MF CMakeFiles/super_mario.dir/model/rect.cpp.o.d -o CMakeFiles/super_mario.dir/model/rect.cpp.o -c /home/viktoria/Documents/super_mario/src/model/rect.cpp
 
 CMakeFiles/super_mario.dir/model/rect.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/super_mario.dir/model/rect.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o: /home/viktoria/Documents/super_mario/src/model/rect_map_movable_adapter.cpp
 CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o -MF CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o.d -o CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o -c /home/viktoria/Documents/super_mario/src/model/rect_map_movable_adapter.cpp
 
 CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/objects/full_box.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/full_box.cpp.o: /home/viktoria/Documents/super_mario/src/objects/full_box.cpp
 CMakeFiles/super_mario.dir/objects/full_box.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/super_mario.dir/objects/full_box.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/super_mario.dir/objects/full_box.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/full_box.cpp.o -MF CMakeFiles/super_mario.dir/objects/full_box.cpp.o.d -o CMakeFiles/super_mario.dir/objects/full_box.cpp.o -c /home/viktoria/Documents/super_mario/src/objects/full_box.cpp
 
 CMakeFiles/super_mario.dir/objects/full_box.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/super_mario.dir/objects/full_box.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/objects/enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/enemy.cpp.o: /home/viktoria/Documents/super_mario/src/objects/enemy.cpp
 CMakeFiles/super_mario.dir/objects/enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/super_mario.dir/objects/enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/super_mario.dir/objects/enemy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/enemy.cpp.o -MF CMakeFiles/super_mario.dir/objects/enemy.cpp.o.d -o CMakeFiles/super_mario.dir/objects/enemy.cpp.o -c /home/viktoria/Documents/super_mario/src/objects/enemy.cpp
 
 CMakeFiles/super_mario.dir/objects/enemy.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/super_mario.dir/objects/enemy.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/objects/mario.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/mario.cpp.o: /home/viktoria/Documents/super_mario/src/objects/mario.cpp
 CMakeFiles/super_mario.dir/objects/mario.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/super_mario.dir/objects/mario.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/super_mario.dir/objects/mario.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/mario.cpp.o -MF CMakeFiles/super_mario.dir/objects/mario.cpp.o.d -o CMakeFiles/super_mario.dir/objects/mario.cpp.o -c /home/viktoria/Documents/super_mario/src/objects/mario.cpp
 
 CMakeFiles/super_mario.dir/objects/mario.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/super_mario.dir/objects/mario.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/objects/money.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/money.cpp.o: /home/viktoria/Documents/super_mario/src/objects/money.cpp
 CMakeFiles/super_mario.dir/objects/money.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/super_mario.dir/objects/money.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/super_mario.dir/objects/money.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/money.cpp.o -MF CMakeFiles/super_mario.dir/objects/money.cpp.o.d -o CMakeFiles/super_mario.dir/objects/money.cpp.o -c /home/viktoria/Documents/super_mario/src/objects/money.cpp
 
 CMakeFiles/super_mario.dir/objects/money.cpp.i: cmake_force
@@ -293,10 +307,38 @@ CMakeFiles/super_mario.dir/objects/money.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/objects/money.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/Documents/super_mario/src/objects/money.cpp -o CMakeFiles/super_mario.dir/objects/money.cpp.s
 
+CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
+CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o: /home/viktoria/Documents/super_mario/src/objects/flying_enemy.cpp
+CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o -MF CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o -c /home/viktoria/Documents/super_mario/src/objects/flying_enemy.cpp
+
+CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/Documents/super_mario/src/objects/flying_enemy.cpp > CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.i
+
+CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/Documents/super_mario/src/objects/flying_enemy.cpp -o CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.s
+
+CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
+CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o: /home/viktoria/Documents/super_mario/src/objects/jumping_enemy.cpp
+CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o -MF CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o -c /home/viktoria/Documents/super_mario/src/objects/jumping_enemy.cpp
+
+CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/Documents/super_mario/src/objects/jumping_enemy.cpp > CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.i
+
+CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/Documents/super_mario/src/objects/jumping_enemy.cpp -o CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.s
+
 CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/console_game_map.cpp
 CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/console_game_map.cpp
 
 CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.i: cmake_force
@@ -310,7 +352,7 @@ CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/console_ui_factory.cpp
 CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/console_ui_factory.cpp
 
 CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.i: cmake_force
@@ -324,7 +366,7 @@ CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/console_ui_obj_rect_adapter.cpp
 CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/console_ui_obj_rect_adapter.cpp
 
 CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.i: cmake_force
@@ -338,7 +380,7 @@ CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.s: cmake_f
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_box.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_box.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.i: cmake_force
@@ -352,7 +394,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_enemy.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_enemy.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.i: cmake_force
@@ -366,7 +408,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.s: cmake_forc
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_full_box.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_full_box.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.i: cmake_force
@@ -380,7 +422,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.s: cmake_f
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_mario.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_mario.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.i: cmake_force
@@ -394,7 +436,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.s: cmake_forc
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_money.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_money.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.i: cmake_force
@@ -408,7 +450,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.s: cmake_forc
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_ship.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_ship.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.i: cmake_force
@@ -419,6 +461,34 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_ship.cpp -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.s
 
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_flying_enemy.cpp
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_flying_enemy.cpp
+
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_flying_enemy.cpp > CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.i
+
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_flying_enemy.cpp -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.s
+
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o: /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_jumping_enemy.cpp
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o -c /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_jumping_enemy.cpp
+
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_jumping_enemy.cpp > CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.i
+
+CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_jumping_enemy.cpp -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.s
+
 # Object files for target super_mario
 super_mario_OBJECTS = \
 "CMakeFiles/super_mario.dir/main.cpp.o" \
@@ -428,6 +498,7 @@ super_mario_OBJECTS = \
 "CMakeFiles/super_mario.dir/levels/first_level.cpp.o" \
 "CMakeFiles/super_mario.dir/levels/game_level.cpp.o" \
 "CMakeFiles/super_mario.dir/levels/second_level.cpp.o" \
+"CMakeFiles/super_mario.dir/levels/third_level.cpp.o" \
 "CMakeFiles/super_mario.dir/model/collisionable.cpp.o" \
 "CMakeFiles/super_mario.dir/model/game_map.cpp.o" \
 "CMakeFiles/super_mario.dir/model/movable.cpp.o" \
@@ -437,6 +508,8 @@ super_mario_OBJECTS = \
 "CMakeFiles/super_mario.dir/objects/enemy.cpp.o" \
 "CMakeFiles/super_mario.dir/objects/mario.cpp.o" \
 "CMakeFiles/super_mario.dir/objects/money.cpp.o" \
+"CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o" \
+"CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o" \
 "CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o" \
 "CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o" \
 "CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o" \
@@ -445,7 +518,9 @@ super_mario_OBJECTS = \
 "CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o" \
 "CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o" \
 "CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o" \
-"CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o"
+"CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o" \
+"CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o" \
+"CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o"
 
 # External object files for target super_mario
 super_mario_EXTERNAL_OBJECTS =
@@ -457,6 +532,7 @@ super_mario: CMakeFiles/super_mario.dir/controller/game.cpp.o
 super_mario: CMakeFiles/super_mario.dir/levels/first_level.cpp.o
 super_mario: CMakeFiles/super_mario.dir/levels/game_level.cpp.o
 super_mario: CMakeFiles/super_mario.dir/levels/second_level.cpp.o
+super_mario: CMakeFiles/super_mario.dir/levels/third_level.cpp.o
 super_mario: CMakeFiles/super_mario.dir/model/collisionable.cpp.o
 super_mario: CMakeFiles/super_mario.dir/model/game_map.cpp.o
 super_mario: CMakeFiles/super_mario.dir/model/movable.cpp.o
@@ -466,6 +542,8 @@ super_mario: CMakeFiles/super_mario.dir/objects/full_box.cpp.o
 super_mario: CMakeFiles/super_mario.dir/objects/enemy.cpp.o
 super_mario: CMakeFiles/super_mario.dir/objects/mario.cpp.o
 super_mario: CMakeFiles/super_mario.dir/objects/money.cpp.o
+super_mario: CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o
+super_mario: CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o
 super_mario: CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o
 super_mario: CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o
 super_mario: CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o
@@ -475,9 +553,11 @@ super_mario: CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.c
 super_mario: CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o
 super_mario: CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o
 super_mario: CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o
+super_mario: CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o
+super_mario: CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o
 super_mario: CMakeFiles/super_mario.dir/build.make
 super_mario: CMakeFiles/super_mario.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable super_mario"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/viktoria/Documents/super_mario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable super_mario"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/super_mario.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,7 +1,7 @@
-CMakeFiles/super_mario.dir/levels/second_level.cpp.o: \
- /home/viktoria/Documents/super_mario/src/levels/second_level.cpp \
+CMakeFiles/super_mario.dir/levels/third_level.cpp.o: \
+ /home/viktoria/Documents/super_mario/src/levels/third_level.cpp \
  /usr/include/stdc-predef.h \
- /home/viktoria/Documents/super_mario/src/levels/second_level.hpp \
+ /home/viktoria/Documents/super_mario/src/levels/third_level.hpp \
  /home/viktoria/Documents/super_mario/src/levels/game_level.hpp \
  /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -63,5 +63,4 @@ CMakeFiles/super_mario.dir/levels/second_level.cpp.o: \
  /home/viktoria/Documents/super_mario/src/model/map_movable.hpp \
  /home/viktoria/Documents/super_mario/src/objects/mario.hpp \
  /home/viktoria/Documents/super_mario/src/model/movable.hpp \
- /home/viktoria/Documents/super_mario/src/model/game_map.hpp \
- /home/viktoria/Documents/super_mario/src/levels/third_level.hpp
+ /home/viktoria/Documents/super_mario/src/model/game_map.hpp

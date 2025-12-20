@@ -225,6 +225,30 @@ levels/second_level.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/levels/second_level.cpp.s
 .PHONY : levels/second_level.cpp.s
 
+levels/third_level.o: levels/third_level.cpp.o
+.PHONY : levels/third_level.o
+
+# target to build an object file
+levels/third_level.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/levels/third_level.cpp.o
+.PHONY : levels/third_level.cpp.o
+
+levels/third_level.i: levels/third_level.cpp.i
+.PHONY : levels/third_level.i
+
+# target to preprocess a source file
+levels/third_level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/levels/third_level.cpp.i
+.PHONY : levels/third_level.cpp.i
+
+levels/third_level.s: levels/third_level.cpp.s
+.PHONY : levels/third_level.s
+
+# target to generate assembly for a file
+levels/third_level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/levels/third_level.cpp.s
+.PHONY : levels/third_level.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -393,6 +417,30 @@ objects/enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/enemy.cpp.s
 .PHONY : objects/enemy.cpp.s
 
+objects/flying_enemy.o: objects/flying_enemy.cpp.o
+.PHONY : objects/flying_enemy.o
+
+# target to build an object file
+objects/flying_enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.o
+.PHONY : objects/flying_enemy.cpp.o
+
+objects/flying_enemy.i: objects/flying_enemy.cpp.i
+.PHONY : objects/flying_enemy.i
+
+# target to preprocess a source file
+objects/flying_enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.i
+.PHONY : objects/flying_enemy.cpp.i
+
+objects/flying_enemy.s: objects/flying_enemy.cpp.s
+.PHONY : objects/flying_enemy.s
+
+# target to generate assembly for a file
+objects/flying_enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/flying_enemy.cpp.s
+.PHONY : objects/flying_enemy.cpp.s
+
 objects/full_box.o: objects/full_box.cpp.o
 .PHONY : objects/full_box.o
 
@@ -416,6 +464,30 @@ objects/full_box.s: objects/full_box.cpp.s
 objects/full_box.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/full_box.cpp.s
 .PHONY : objects/full_box.cpp.s
+
+objects/jumping_enemy.o: objects/jumping_enemy.cpp.o
+.PHONY : objects/jumping_enemy.o
+
+# target to build an object file
+objects/jumping_enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o
+.PHONY : objects/jumping_enemy.cpp.o
+
+objects/jumping_enemy.i: objects/jumping_enemy.cpp.i
+.PHONY : objects/jumping_enemy.i
+
+# target to preprocess a source file
+objects/jumping_enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.i
+.PHONY : objects/jumping_enemy.cpp.i
+
+objects/jumping_enemy.s: objects/jumping_enemy.cpp.s
+.PHONY : objects/jumping_enemy.s
+
+# target to generate assembly for a file
+objects/jumping_enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.s
+.PHONY : objects/jumping_enemy.cpp.s
 
 objects/mario.o: objects/mario.cpp.o
 .PHONY : objects/mario.o
@@ -633,6 +705,30 @@ ui/console/ui_objects/console_enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.s
 .PHONY : ui/console/ui_objects/console_enemy.cpp.s
 
+ui/console/ui_objects/console_flying_enemy.o: ui/console/ui_objects/console_flying_enemy.cpp.o
+.PHONY : ui/console/ui_objects/console_flying_enemy.o
+
+# target to build an object file
+ui/console/ui_objects/console_flying_enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.o
+.PHONY : ui/console/ui_objects/console_flying_enemy.cpp.o
+
+ui/console/ui_objects/console_flying_enemy.i: ui/console/ui_objects/console_flying_enemy.cpp.i
+.PHONY : ui/console/ui_objects/console_flying_enemy.i
+
+# target to preprocess a source file
+ui/console/ui_objects/console_flying_enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.i
+.PHONY : ui/console/ui_objects/console_flying_enemy.cpp.i
+
+ui/console/ui_objects/console_flying_enemy.s: ui/console/ui_objects/console_flying_enemy.cpp.s
+.PHONY : ui/console/ui_objects/console_flying_enemy.s
+
+# target to generate assembly for a file
+ui/console/ui_objects/console_flying_enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flying_enemy.cpp.s
+.PHONY : ui/console/ui_objects/console_flying_enemy.cpp.s
+
 ui/console/ui_objects/console_full_box.o: ui/console/ui_objects/console_full_box.cpp.o
 .PHONY : ui/console/ui_objects/console_full_box.o
 
@@ -656,6 +752,30 @@ ui/console/ui_objects/console_full_box.s: ui/console/ui_objects/console_full_box
 ui/console/ui_objects/console_full_box.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.s
 .PHONY : ui/console/ui_objects/console_full_box.cpp.s
+
+ui/console/ui_objects/console_jumping_enemy.o: ui/console/ui_objects/console_jumping_enemy.cpp.o
+.PHONY : ui/console/ui_objects/console_jumping_enemy.o
+
+# target to build an object file
+ui/console/ui_objects/console_jumping_enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.o
+.PHONY : ui/console/ui_objects/console_jumping_enemy.cpp.o
+
+ui/console/ui_objects/console_jumping_enemy.i: ui/console/ui_objects/console_jumping_enemy.cpp.i
+.PHONY : ui/console/ui_objects/console_jumping_enemy.i
+
+# target to preprocess a source file
+ui/console/ui_objects/console_jumping_enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.i
+.PHONY : ui/console/ui_objects/console_jumping_enemy.cpp.i
+
+ui/console/ui_objects/console_jumping_enemy.s: ui/console/ui_objects/console_jumping_enemy.cpp.s
+.PHONY : ui/console/ui_objects/console_jumping_enemy.s
+
+# target to generate assembly for a file
+ui/console/ui_objects/console_jumping_enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumping_enemy.cpp.s
+.PHONY : ui/console/ui_objects/console_jumping_enemy.cpp.s
 
 ui/console/ui_objects/console_mario.o: ui/console/ui_objects/console_mario.cpp.o
 .PHONY : ui/console/ui_objects/console_mario.o
@@ -750,6 +870,9 @@ help:
 	@echo "... levels/second_level.o"
 	@echo "... levels/second_level.i"
 	@echo "... levels/second_level.s"
+	@echo "... levels/third_level.o"
+	@echo "... levels/third_level.i"
+	@echo "... levels/third_level.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -771,9 +894,15 @@ help:
 	@echo "... objects/enemy.o"
 	@echo "... objects/enemy.i"
 	@echo "... objects/enemy.s"
+	@echo "... objects/flying_enemy.o"
+	@echo "... objects/flying_enemy.i"
+	@echo "... objects/flying_enemy.s"
 	@echo "... objects/full_box.o"
 	@echo "... objects/full_box.i"
 	@echo "... objects/full_box.s"
+	@echo "... objects/jumping_enemy.o"
+	@echo "... objects/jumping_enemy.i"
+	@echo "... objects/jumping_enemy.s"
 	@echo "... objects/mario.o"
 	@echo "... objects/mario.i"
 	@echo "... objects/mario.s"
@@ -801,9 +930,15 @@ help:
 	@echo "... ui/console/ui_objects/console_enemy.o"
 	@echo "... ui/console/ui_objects/console_enemy.i"
 	@echo "... ui/console/ui_objects/console_enemy.s"
+	@echo "... ui/console/ui_objects/console_flying_enemy.o"
+	@echo "... ui/console/ui_objects/console_flying_enemy.i"
+	@echo "... ui/console/ui_objects/console_flying_enemy.s"
 	@echo "... ui/console/ui_objects/console_full_box.o"
 	@echo "... ui/console/ui_objects/console_full_box.i"
 	@echo "... ui/console/ui_objects/console_full_box.s"
+	@echo "... ui/console/ui_objects/console_jumping_enemy.o"
+	@echo "... ui/console/ui_objects/console_jumping_enemy.i"
+	@echo "... ui/console/ui_objects/console_jumping_enemy.s"
 	@echo "... ui/console/ui_objects/console_mario.o"
 	@echo "... ui/console/ui_objects/console_mario.i"
 	@echo "... ui/console/ui_objects/console_mario.s"

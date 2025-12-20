@@ -95,23 +95,6 @@ CMakeFiles/super_mario.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /home/viktoria/Documents/super_mario/src/ui/console/console_ui_factory.hpp \
- /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_box.hpp \
- /home/viktoria/Documents/super_mario/src/ui/console/console_ui_obj_rect_adapter.hpp \
- /home/viktoria/Documents/super_mario/src/ui/console/console_ui_obj.hpp \
- /home/viktoria/Documents/super_mario/src/model/rect.hpp \
- /home/viktoria/Documents/super_mario/src/model/coord.hpp \
- /home/viktoria/Documents/super_mario/src/objects/box.hpp \
- /home/viktoria/Documents/super_mario/src/model/rect_map_movable_adapter.hpp \
- /home/viktoria/Documents/super_mario/src/model/map_movable.hpp \
- /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_enemy.hpp \
- /home/viktoria/Documents/super_mario/src/objects/enemy.hpp \
- /home/viktoria/Documents/super_mario/src/model/collisionable.hpp \
- /home/viktoria/Documents/super_mario/src/model/speed.hpp \
- /home/viktoria/Documents/super_mario/src/model/movable.hpp \
- /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_full_box.hpp \
- /home/viktoria/Documents/super_mario/src/objects/full_box.hpp \
- /home/viktoria/Documents/super_mario/src/model/ui_factory.hpp \
- /home/viktoria/Documents/super_mario/src/controller/game.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/c++/13/bits/functexcept.h \
  /usr/include/c++/13/bits/exception_defines.h \
@@ -136,14 +119,67 @@ CMakeFiles/super_mario.dir/main.cpp.o: \
  /usr/include/c++/13/bits/vector.tcc \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator_args.h \
+ /home/viktoria/Documents/super_mario/src/model/ui_factory.hpp \
+ /home/viktoria/Documents/super_mario/src/controller/game.hpp \
+ /home/viktoria/Documents/super_mario/src/model/collisionable.hpp \
+ /home/viktoria/Documents/super_mario/src/model/rect.hpp \
+ /home/viktoria/Documents/super_mario/src/model/coord.hpp \
+ /home/viktoria/Documents/super_mario/src/model/speed.hpp \
+ /home/viktoria/Documents/super_mario/src/model/map_movable.hpp \
  /home/viktoria/Documents/super_mario/src/objects/mario.hpp \
+ /home/viktoria/Documents/super_mario/src/model/movable.hpp \
  /home/viktoria/Documents/super_mario/src/model/game_map.hpp \
- /home/viktoria/Documents/super_mario/src/ui/console/console_game_map.hpp \
+ /home/viktoria/Documents/super_mario/src/ui/console/console_ui_obj_rect_adapter.hpp \
+ /home/viktoria/Documents/super_mario/src/ui/console/console_ui_obj.hpp \
+ /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_box.hpp \
+ /home/viktoria/Documents/super_mario/src/objects/box.hpp \
+ /home/viktoria/Documents/super_mario/src/model/rect_map_movable_adapter.hpp \
+ /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_full_box.hpp \
+ /home/viktoria/Documents/super_mario/src/objects/full_box.hpp \
+ /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_ship.hpp \
+ /home/viktoria/Documents/super_mario/src/objects/ship.hpp \
+ /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_enemy.hpp \
+ /home/viktoria/Documents/super_mario/src/objects/enemy.hpp \
  /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_mario.hpp \
  /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_money.hpp \
  /home/viktoria/Documents/super_mario/src/objects/money.hpp \
- /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_ship.hpp \
- /home/viktoria/Documents/super_mario/src/objects/ship.hpp \
+ /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_flying_enemy.hpp \
+ /home/viktoria/Documents/super_mario/src/objects/flying_enemy.hpp \
+ /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/13/bits/std_abs.h /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/special_function_util.h \
+ /usr/include/c++/13/tr1/bessel_function.tcc \
+ /usr/include/c++/13/tr1/beta_function.tcc \
+ /usr/include/c++/13/tr1/ell_integral.tcc \
+ /usr/include/c++/13/tr1/exp_integral.tcc \
+ /usr/include/c++/13/tr1/hypergeometric.tcc \
+ /usr/include/c++/13/tr1/legendre_function.tcc \
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13/tr1/poly_hermite.tcc \
+ /usr/include/c++/13/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /home/viktoria/Documents/super_mario/src/ui/console/ui_objects/console_jumping_enemy.hpp \
+ /home/viktoria/Documents/super_mario/src/objects/jumping_enemy.hpp \
+ /home/viktoria/Documents/super_mario/src/ui/console/console_game_map.hpp \
  /home/viktoria/Documents/super_mario/src/levels/first_level.hpp \
  /home/viktoria/Documents/super_mario/src/levels/game_level.hpp \
  /home/viktoria/Documents/super_mario/src/os_controls/os_api/os_control_settings.hpp \
