@@ -10,8 +10,18 @@
 namespace biv {
 	class JumpingEnemy : public RectMapMovableAdapter, public Movable, public Collisionable {
 		private:
-			int jump_interval = 60; // frames between jumps
+			int jump_interval = 60; // кадры между прыжками
 			int timer = 0;
+
+			// Последняя платформа (границы)
+			bool on_ground = false;
+			int ground_left = -1;
+			int ground_right = -1;
+
+			// карта (ограничения)
+			static constexpr int MAP_WIDTH = 200;
+			static constexpr int MAP_HEIGHT = 30;
+
 		public:
 			JumpingEnemy(const Coord& top_left, const int width, const int height);
 

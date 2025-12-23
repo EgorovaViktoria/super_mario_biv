@@ -166,4 +166,21 @@ CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /usr/include/c++/13/bits/istream.tcc \
+ /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /home/viktoria/Documents/super_mario/src/model/collisionable.hpp \
+ /home/viktoria/Documents/super_mario/src/model/speed.hpp

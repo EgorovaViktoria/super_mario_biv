@@ -13,7 +13,7 @@ void ConsoleUIFactory::clear_data() {
 		game->remove_collisionable(mario);
 		game->remove_movable(mario);
 		game->remove_mario();
-		game_map->remove_obj(mario);
+		if (game_map) game_map->remove_obj(mario);
 		delete mario;
 		mario = nullptr;
 	}
@@ -86,7 +86,10 @@ void ConsoleUIFactory::create_mario(
 	game->add_collisionable(mario);
 	game->add_movable(mario);
 	game->add_mario(mario);
-	if (game_map) game_map->add_obj(mario);
+
+	if (game_map) {
+		game_map->add_obj(mario);
+	}
 }
 
 void ConsoleUIFactory::create_money(
