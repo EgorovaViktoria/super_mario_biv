@@ -32,6 +32,12 @@ biv::Speed JumpingEnemy::get_speed() const noexcept {
 }
 
 void JumpingEnemy::move_horizontally() noexcept {
+	// FIX: Если враг мертв, убираем его с экрана и не двигаем
+	if (!is_active()) {
+		top_left.x = -10000;
+		return;
+	}
+
 	float next_x = top_left.x + hspeed;
 	// Если знаем платформу — проверяем, останемся ли на ней.
 	if (on_ground) {
@@ -52,6 +58,12 @@ void JumpingEnemy::move_horizontally() noexcept {
 }
 
 void JumpingEnemy::move_vertically() noexcept {
+	// FIX: Если враг мертв, убираем его с экрана и не двигаем
+	if (!is_active()) {
+		top_left.y = -10000;
+		return;
+	}
+
 	// таймер прыжков
 	if (timer <= 0) {
 		// Используем собственную силу прыжка у врага, чтобы он прыгал ниже, чем Марио.
