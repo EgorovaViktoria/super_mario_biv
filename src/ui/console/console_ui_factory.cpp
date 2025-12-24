@@ -17,7 +17,6 @@ void ConsoleUIFactory::clear_data() {
 		delete mario;
 		mario = nullptr;
 	}
-	// Удаляем и освобождаем все контейнеры врагов и объектов
 	for (auto b : boxes) delete b;
 	boxes.clear();
 	for (auto fb : full_boxes) delete fb;
@@ -29,7 +28,6 @@ void ConsoleUIFactory::clear_data() {
 	for (auto m : moneys) delete m;
 	moneys.clear();
 
-	// Новые типы врагов
 	for (auto fe : flying_enemies) delete fe;
 	flying_enemies.clear();
 	for (auto je : jumping_enemies) delete je;
@@ -71,7 +69,6 @@ void ConsoleUIFactory::create_full_box(
 void ConsoleUIFactory::create_mario(
 	const Coord& top_left, const int width, const int height
 ) {
-	// Удаляем старого Марио, только если он реально существует.
 	if (mario != nullptr) {
 		game->remove_collisionable(mario);
 		game->remove_movable(mario);
@@ -124,8 +121,6 @@ void ConsoleUIFactory::create_flying_enemy(
 	if (game_map) game_map->add_obj(fe);
 }
 
-// Создаем прыгающего врага и регистрируем точно так же, как обычного врага,
-// чтобы он участвовал в проверках столкновений и не проваливался сквозь платформы.
 void ConsoleUIFactory::create_jumping_enemy(
 	const Coord& top_left, const int width, const int height
 ) {
