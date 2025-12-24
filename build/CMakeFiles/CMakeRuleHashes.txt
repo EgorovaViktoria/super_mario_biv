@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+5df1b29c251098d9d3e6840c7c00583f CMakeFiles/super_mario_autogen
+5df1b29c251098d9d3e6840c7c00583f CMakeFiles/super_mario_autogen_timestamp_deps
+ea098230086eaa86905ea1bba9b471fd SuperMarioBiv_autogen/timestamp
+63ddf43ef0f16a19b0ea41014e5211b2 super_mario_autogen/timestamp
