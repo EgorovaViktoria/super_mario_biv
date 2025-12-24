@@ -1,5 +1,0 @@
-/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/super_mario.dir
-/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/edit_cache.dir
-/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/rebuild_cache.dir
-/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/super_mario_autogen_timestamp_deps.dir
-/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/super_mario_autogen.dir
