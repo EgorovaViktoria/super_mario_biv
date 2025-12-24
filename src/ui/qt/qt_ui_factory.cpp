@@ -1,116 +1,113 @@
 #include "qt_ui_factory.hpp"
-#include "../../objects/mario.hpp"
-#include "../../objects/enemy.hpp"
-#include "../../objects/flying_enemy.hpp"
-#include "../../objects/jumping_enemy.hpp"
-#include "../../objects/box.hpp"
-#include "../../objects/full_box.hpp"
-#include "../../objects/money.hpp"
-#include "../../objects/ship.hpp"
 
-namespace biv {
+using biv::QtUIFactory;
 
-    QtUIFactory::QtUIFactory(Game* game) : UIFactory(game) {
-        create_game_map();
-    }
+QtUIFactory::QtUIFactory(Game* game) : UIFactory(game) {
+    create_game_map();
+}
+
+void QtUIFactory::create_game_map() {
+    game_map = new QtGameMap(30, 220);
+}
+
+void QtUIFactory::clear_data() {
+    game->remove_objs();
+    game_map->remove_objs();
+    delete mario;
+    mario = nullptr;
+    boxes.clear();
+    full_boxes.clear();
+    ships.clear();
+    enemies.clear();
+    flying_enemies.clear();
+    jumping_enemies.clear();
+    moneys.clear();
+}
+
+void QtUIFactory::create_box(const Coord& top_left, const int width, const int height) {
+    QtBox* box = new QtBox(top_left, width, height);
+    boxes.push_back(box);
+    game->add_map_movable(box);
+    game->add_static_obj(box);
+    game_map->add_obj(box);
+}
+
+void QtUIFactory::create_enemy(const Coord& top_left, const int width, const int height) {
+    QtEnemy* enemy = new QtEnemy(top_left, width, height);
+    enemies.push_back(enemy);
+    game->add_map_movable(enemy);
+    game->add_movable(enemy);
+    game->add_collisionable(enemy);
+    game_map->add_obj(enemy);
+}
+
+void QtUIFactory::create_flying_enemy(const Coord& top_left, const int width, const int height) {
+    QtFlyingEnemy* enemy = new QtFlyingEnemy(top_left, width, height, game);
+    flying_enemies.push_back(enemy);
+    game->add_map_movable(enemy);
+    game->add_movable(enemy);
+    game->add_collisionable(enemy);
+    game_map->add_obj(enemy);
+}
+
+void QtUIFactory::create_jumping_enemy(const Coord& top_left, const int width, const int height) {
+    QtJumpingEnemy* enemy = new QtJumpingEnemy(top_left, width, height);
+    jumping_enemies.push_back(enemy);
+    game->add_map_movable(enemy);
+    game->add_movable(enemy);
+    game->add_collisionable(enemy);
+    game_map->add_obj(enemy);
+}
+
+void QtUIFactory::create_full_box(const Coord& top_left, const int width, const int height) {
+    QtFullBox* full_box = new QtFullBox(top_left, width, height, this);
+    full_boxes.push_back(full_box);
+    game->add_collisionable(full_box);
+    game->add_map_movable(full_box);
+    game->add_static_obj(full_box);
+    game_map->add_obj(full_box);
+}
+
+void QtUIFactory::create_mario(const Coord& top_left, const int width, const int height) {
+    game->remove_collisionable(mario);
+    game->remove_movable(mario);
+    game->remove_mario();
+    game_map->remove_obj(mario);
+    delete mario;
+    mario = nullptr;
     
-    // Реализация деструктора
-    QtUIFactory::~QtUIFactory() {
-        if (map) delete map;
-        // Объекты рендера не удаляем здесь, так как ими владеет Game (обычно)
-        // Или если Factory владеет, нужно пройтись и удалит
-ь.
-        // В текущей архитектуре ownership не совсем ясен, оставим как есть.
-    }
+    mario = new QtMario(top_left, width, height);
+    game->add_collisionable(mario);
+    game->add_movable(mario);
+    game->add_mario(mario);
+    game_map->add_obj(mario);
+}
 
-    void QtUIFactory::create_game_map() {
-        if (!map) map = new QtGameMap(10, 100); 
-    }
+void QtUIFactory::create_money(const Coord& top_left, const int width, const int height) {
+    QtMoney* money = new QtMoney(top_left, width, height);
+    moneys.push_back(money);
+    game->add_map_movable(money);
+    game->add_movable(money);
+    game->add_collisionable(money);
+    game_map->add_obj(money);
+}
 
-    GameMap* QtUIFactory::get_game_map() { return map; }
-    Mario* QtUIFactory::get_mario() { return mario; }
+void QtUIFactory::create_ship(const Coord& top_left, const int width, const int height) {
+    QtShip* ship = new QtShip(top_left, width, height);
+    ships.push_back(ship);
+    game->add_map_movable(ship);
+    game->add_static_obj(ship);
+    game_map->add_obj(ship);
+}
 
-    void QtUIFactory::clear_data() {
-        render_list.clear();
-        game->remove_objs();
-        mario = nullptr;
-    }
+void QtUIFactory::finalize_level() {
+    game->set_level_end_to_last_static();
+}
 
-    void QtUIFactory::draw_all(QPainter& p) {
-        for (const auto& obj : render_list) {
-            if (!obj.rect) continue; // Защита
+biv::GameMap* QtUIFactory::get_game_map() {
+    return game_map;
+}
 
-            float w = obj.rect->get_right() - obj.rect->get_left();
-            float h = obj.rect->get_bottom() - obj.rect->get_top();
-            
-            QRectF r(
-                obj.rect->get_left() * scale, 
-                obj.rect->get_top() * scale,
-                w * scale,
-                h * scale
-            );
-            
-            p.fillRect(r, obj.color);
-            p.setPen(QColor(0, 0, 0, 100));
-            p.drawRect(r);
-        }
-    }
-
-    void QtUIFactory::create_mario(const Coord& tl, int w, int h) {
-        mario = new Mario(tl, w, h);
-        render_list.push_back(RenderObject{dynamic_cast<Rect*>(mario), Qt::red});
-        game->add_mario(mario);
-        game->add_movable(mario);
-    }
-
-    void QtUIFactory::create_enemy(const Coord& tl, int w, int h) {
-        auto* obj = create_base<Enemy>(tl, w, h, QColor(139, 69, 19)); 
-        game->add_collisionable(obj);
-        game->add_movable(obj);
-        game->add_map_movable(obj);
-    }
-
-    void QtUIFactory::create_ship(const Coord& tl, int w, int h) {
-        // Создаем через create_base (он добавит в render_list)
-        auto* obj = create_base<Ship>(tl, w, h, Qt::darkGreen);
-        
-        // ВАЖНО: Добавляем в список статических объектов для коллизий
-        game->add_static_obj(obj);
-        
-        // Добавляем, чтобы он двигался вместе с картой
-        game->add_map_movable(obj);
-    }
-
-    void QtUIFactory::create_box(const Coord& tl, int w, int h) {
-        auto* obj = create_base<Box>(tl, w, h, Qt::yellow);
-        game->add_static_obj(obj);
-        game->add_map_movable(obj);
-    }
-
-    void QtUIFactory::create_full_box(const Coord& tl, int w, int h) {
-        auto* obj = new FullBox(tl, w, h, this);
-        render_list.push_back(RenderObject{dynamic_cast<Rect*>(obj), QColor(205, 133, 63)});
-        game->add_static_obj(obj);
-        game->add_map_movable(obj);
-    }
-    
-    void QtUIFactory::create_money(const Coord& tl, int w, int h) {
-        auto* obj = new Money(tl, w, h);
-        render_list.push_back(RenderObject{dynamic_cast<Rect*>(obj), QColor(255, 215, 0)});
-        game->add_map_movable(obj);
-    }
-
-    void QtUIFactory::create_flying_enemy(const Coord& tl, int w, int h) {
-        auto* obj = create_base<FlyingEnemy>(tl, w, h, Qt::magenta);
-        game->add_collisionable(obj);
-        game->add_movable(obj);
-        game->add_map_movable(obj);
-    }
-
-    void QtUIFactory::create_jumping_enemy(const Coord& tl, int w, int h) {
-        auto* obj = create_base<JumpingEnemy>(tl, w, h, Qt::darkRed);
-        game->add_collisionable(obj);
-        game->add_movable(obj);
-        game->add_map_movable(obj);
-    }
+biv::Mario* QtUIFactory::get_mario() {
+    return mario;
 }
