@@ -15,6 +15,10 @@ int Rect::get_height() const noexcept {
 	return height;
 }
 
+int Rect::get_width() const noexcept {
+	return width;
+}
+
 int Rect::get_left() const noexcept {
 	return std::round(top_left.x);
 }
