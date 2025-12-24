@@ -959,6 +959,7 @@ CMakeFiles/super_mario.dir/objects/jumping_enemy.cpp.o: /home/viktoria/Documents
   /home/viktoria/Documents/super_mario/src/model/rect_map_movable_adapter.hpp \
   /home/viktoria/Documents/super_mario/src/model/speed.hpp \
   /home/viktoria/Documents/super_mario/src/objects/jumping_enemy.hpp \
+  /home/viktoria/Documents/super_mario/src/objects/mario.hpp \
   /usr/include/alloca.h \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/cstdlib \
@@ -1134,6 +1135,8 @@ CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: /home/viktoria/Doc
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/asm-generic/ioctls.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
@@ -1241,7 +1244,9 @@ CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: /home/viktoria/Doc
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/ioctl.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1251,20 +1256,30 @@ CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: /home/viktoria/Doc
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -1308,6 +1323,7 @@ CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: /home/viktoria/Doc
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -1327,8 +1343,10 @@ CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: /home/viktoria/Doc
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
@@ -1776,6 +1794,8 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: /home/vikto
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
+/usr/include/x86_64-linux-gnu/sys/ioctl.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
@@ -1786,11 +1806,19 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: /home/vikto
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/include/x86_64-linux-gnu/bits/ioctls.h:
+
+/usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+
 /usr/include/strings.h:
 
 /usr/include/locale.h:
 
 /usr/include/ctype.h:
+
+/usr/include/linux/ioctl.h:
 
 /usr/include/c++/13/typeinfo:
 
@@ -1842,6 +1870,10 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: /home/vikto
 
 /usr/include/c++/13/bits/basic_ios.h:
 
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/asm-generic/ioctl.h:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios.h:
@@ -1853,6 +1885,8 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: /home/vikto
 /home/viktoria/Documents/super_mario/src/levels/third_level.cpp:
 
 /home/viktoria/Documents/super_mario/src/levels/third_level.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/ioctls.h:
 
 /home/viktoria/Documents/super_mario/src/objects/mario.hpp:
 

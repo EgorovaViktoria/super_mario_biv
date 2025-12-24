@@ -22,6 +22,9 @@ namespace biv {
 			static constexpr int MAP_WIDTH = 200;
 			static constexpr int MAP_HEIGHT = 30;
 
+			// Собственный JUMP_SPEED для прыгающего врага (меньше по модулю => ниже прыгает)
+			static constexpr float JUMP_SPEED_ENEMY = -0.7f;
+
 		public:
 			JumpingEnemy(const Coord& top_left, const int width, const int height);
 

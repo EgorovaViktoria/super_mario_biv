@@ -61,10 +61,9 @@ void ConsoleGameMap::refresh() noexcept {
 	clear();
 	
 	for (ConsoleUIObject* obj: objs) {
-		// Если объект также реализует Collisionable и он не активен — пропускаем.
-		if (auto coll = dynamic_cast<biv::Collisionable*>(obj)) {
-			if (!coll->is_active()) continue;
-		}
+		// NB: не фильтруем объекты по is_active() здесь,
+		// чтобы объекты, которые логически "опустошены" (FullBox -> '-') продолжали отрисовываться.
+		// (Ранее здесь стояла dynamic_cast + is_active() проверка, из-за чего блоки исчезали).
 
 		int left = obj->get_left();
 		int top = obj->get_top();
@@ -105,9 +104,7 @@ void ConsoleGameMap::remove_objs() {
 }
 
 // Отрисовываем экран единым буфером — уменьшаем мерцание.
-// Автоматически определяем размер терминала и подрезаем вывод по строкам/колонкам.
-// Если число печатаемых строк совпадает с высотой терминала, не добавляем завершающий '\n',
-// чтобы избежать прокрутки терминала.
+// (Остальная логика show() оставлена прежней: определение терминала/viewport, omit final newline и т.д.)
 void ConsoleGameMap::show() const noexcept {
 	if (!needs_draw) return;
 
@@ -123,22 +120,44 @@ void ConsoleGameMap::show() const noexcept {
 		}
 	}
 
-	// Если ioctl не сработал, используем полные размеры карты
 	int rows_to_print = (term_rows > 0) ? std::min(term_rows, height) : height;
 	int cols_to_print = (term_cols > 0) ? std::min(term_cols, width) : width;
 
-	// Если терминальная высота совпадает с полной высотой карты (rows_to_print == height),
-	// то мы не добавляем завершающий '\n' после последней строки, чтобы не вызвать scroll.
-	bool omit_final_newline = (term_rows > 0 && term_rows == height);
+	// Найдём Марио, центрируем viewport по нему, как раньше (если нужно)
+	int mario_top = -1, mario_left = -1;
+	for (ConsoleUIObject* o : objs) {
+		if (o->get_brush() == '@') {
+			if (auto coll = dynamic_cast<biv::Collisionable*>(o)) {
+				if (!coll->is_active()) continue;
+			}
+			mario_top = o->get_top();
+			mario_left = o->get_left();
+			break;
+		}
+	}
+
+	int row_start = 0;
+	int col_start = 0;
+	if (mario_top >= 0) {
+		row_start = mario_top - rows_to_print / 2;
+		if (row_start < 0) row_start = 0;
+		if (row_start + rows_to_print > height) row_start = std::max(0, height - rows_to_print);
+	}
+	if (mario_left >= 0) {
+		col_start = mario_left - cols_to_print / 2;
+		if (col_start < 0) col_start = 0;
+		if (col_start + cols_to_print > width) col_start = std::max(0, width - cols_to_print);
+	}
+
+	bool omit_final_newline = (term_rows > 0 && rows_to_print == term_rows);
 
 	std::string out;
 	out.reserve(static_cast<size_t>(rows_to_print) * (static_cast<size_t>(cols_to_print) + 1) + 1);
 
-	for (int i = 0; i < rows_to_print; ++i) {
-		// append только cols_to_print символов из map[i]
-		out.append(map[i], static_cast<size_t>(cols_to_print));
-		// добавляем '\n' для всех строк, кроме последней при omit_final_newline
-		if (!omit_final_newline || (i + 1 < rows_to_print)) {
+	for (int r = 0; r < rows_to_print; ++r) {
+		int map_row = row_start + r;
+		out.append(map[map_row] + col_start, static_cast<size_t>(cols_to_print));
+		if (!omit_final_newline || (r + 1 < rows_to_print)) {
 			out.push_back('\n');
 		}
 	}

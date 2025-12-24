@@ -54,7 +54,8 @@ void JumpingEnemy::move_horizontally() noexcept {
 void JumpingEnemy::move_vertically() noexcept {
 	// таймер прыжков
 	if (timer <= 0) {
-		jump();
+		// Используем собственную силу прыжка у врага, чтобы он прыгал ниже, чем Марио.
+		vspeed = JUMP_SPEED_ENEMY;
 		timer = jump_interval;
 	} else {
 		timer--;
@@ -72,6 +73,8 @@ void JumpingEnemy::process_horizontal_static_collision(Rect* obj) noexcept {
 }
 
 void JumpingEnemy::process_mario_collision(Collisionable* mario) noexcept {
+	// Скопировано поведение из Enemy: если Марио падает сверху — враг умирает,
+	// иначе умирает Марио.
 	if (mario->get_speed().v > 0 && mario->get_speed().v != V_ACCELERATION) {
 		kill();
 	} else {
@@ -88,8 +91,10 @@ void JumpingEnemy::process_vertical_static_collision(Rect* obj) noexcept {
 		top_left.x -= hspeed;
 	}
 
-	if (vspeed > 0) {
-		top_left.y -= vspeed;
+	// Если пришла вертикальная коллизия (враг "сверху" платформы или при падении),
+	// корректно выставляем Y ровно на поверхности платформы и сбрасываем скорость.
+	if (vspeed > 0) { // движется вниз — приземление
+		top_left.y = obj->get_top() - height;
 		vspeed = 0;
 	}
 
