@@ -5,7 +5,7 @@
 namespace biv {
 	class Movable : virtual public Rect {
 		protected:
-			static constexpr float JUMP_SPEED = -1.2f;
+			static constexpr float JUMP_SPEED = -1.5f;
 			static constexpr float MAX_V_SPEED = 0.98f;
 			static constexpr float V_ACCELERATION = 0.05f;
 

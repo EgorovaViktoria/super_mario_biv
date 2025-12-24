@@ -45,18 +45,18 @@ int main(int argc, char *argv[]) {
 		
 		switch (user_input) {
 			case biv::os::UserInput::MAP_LEFT:
-				mario->move_map_left();
-				if (!game.check_static_collisions(mario)) {
-					game.move_map_left();
-				}
-				mario->move_map_right();
-				break;
-			case biv::os::UserInput::MAP_RIGHT:
 				mario->move_map_right();
 				if (!game.check_static_collisions(mario)) {
 					game.move_map_right();
 				}
 				mario->move_map_left();
+				break;
+			case biv::os::UserInput::MAP_RIGHT:
+				mario->move_map_left();
+				if (!game.check_static_collisions(mario)) {
+					game.move_map_left();
+				}
+				mario->move_map_right();
 				break;
 			case biv::os::UserInput::MARIO_JUMP:
 				mario->jump();
