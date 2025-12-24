@@ -1,5 +1,0 @@
-/home/viktoria/Documents/super_mario/build/CMakeFiles/super_mario.dir
-/home/viktoria/Documents/super_mario/build/CMakeFiles/edit_cache.dir
-/home/viktoria/Documents/super_mario/build/CMakeFiles/rebuild_cache.dir
-/home/viktoria/Documents/super_mario/build/CMakeFiles/super_mario_autogen_timestamp_deps.dir
-/home/viktoria/Documents/super_mario/build/CMakeFiles/super_mario_autogen.dir
