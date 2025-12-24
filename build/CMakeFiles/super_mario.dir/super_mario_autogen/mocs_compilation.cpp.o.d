@@ -1,7 +1,7 @@
 CMakeFiles/super_mario.dir/super_mario_autogen/mocs_compilation.cpp.o: \
- /home/viktoria/Documents/super_mario/build/super_mario_autogen/mocs_compilation.cpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/build/super_mario_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/viktoria/Documents/super_mario/build/super_mario_autogen/RRUF6PTD2N/moc_qt_game_window.cpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/build/super_mario_autogen/RRUF6PTD2N/moc_qt_game_map.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/super_mario.dir/super_mario_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/viktoria/Documents/super_mario/build/super_mario_autogen/RRUF6PTD2N/../../../src/ui/qt/qt_game_window.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/build/super_mario_autogen/RRUF6PTD2N/../../../src/ui/qt/qt_game_map.hpp \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -340,9 +340,6 @@ CMakeFiles/super_mario.dir/super_mario_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeyEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
@@ -367,18 +364,10 @@ CMakeFiles/super_mario.dir/super_mario_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/game_map.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/build/super_mario_autogen/RRUF6PTD2N/../../../src/ui/qt/qt_ui_obj.hpp \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
- /home/viktoria/Documents/super_mario/build/super_mario_autogen/RRUF6PTD2N/../../../src/ui/qt/../../controller/game.hpp \
- /home/viktoria/Documents/super_mario/src/model/collisionable.hpp \
- /home/viktoria/Documents/super_mario/src/model/rect.hpp \
- /home/viktoria/Documents/super_mario/src/model/coord.hpp \
- /home/viktoria/Documents/super_mario/src/model/speed.hpp \
- /home/viktoria/Documents/super_mario/src/model/map_movable.hpp \
- /home/viktoria/Documents/super_mario/src/objects/mario.hpp \
- /home/viktoria/Documents/super_mario/src/model/movable.hpp \
- /home/viktoria/Documents/super_mario/build/super_mario_autogen/RRUF6PTD2N/../../../src/ui/qt/../../levels/game_level.hpp \
- /home/viktoria/Documents/super_mario/src/model/ui_factory.hpp \
- /home/viktoria/Documents/super_mario/src/model/game_map.hpp
+ /home/runner/work/super_mario_biv/super_mario_biv/src/os_controls/os_api/user_input.hpp

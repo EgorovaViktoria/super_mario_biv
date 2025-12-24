@@ -1,8 +1,8 @@
 CMakeFiles/super_mario.dir/model/rect.cpp.o: \
- /home/viktoria/Documents/super_mario/src/model/rect.cpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/rect.cpp \
  /usr/include/stdc-predef.h \
- /home/viktoria/Documents/super_mario/src/model/rect.hpp \
- /home/viktoria/Documents/super_mario/src/model/coord.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/rect.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/coord.hpp \
  /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

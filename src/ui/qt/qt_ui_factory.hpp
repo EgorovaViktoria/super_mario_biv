@@ -37,7 +37,6 @@ namespace biv {
             void create_mario(const Coord& top_left, const int width, const int height) override;
             void create_money(const Coord& top_left, const int width, const int height) override;
             void create_ship(const Coord& top_left, const int width, const int height) override;
-            void finalize_level() override;
             GameMap* get_game_map() override;
             Mario* get_mario() override;
             

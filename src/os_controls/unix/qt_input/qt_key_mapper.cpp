@@ -1,6 +1,8 @@
 #include "qt_key_mapper.hpp"
 
-namespace biv::os::unix {
+namespace biv {
+namespace os {
+namespace qt_os {
     std::optional<UserInput> map_qt_key(int key) {
         switch (key) {
             case Qt::Key_A:
@@ -18,4 +20,6 @@ namespace biv::os::unix {
                 return std::nullopt;
         }
     }
+}
+}
 }

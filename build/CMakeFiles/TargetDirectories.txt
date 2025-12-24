@@ -1,5 +1,5 @@
-/home/viktoria/Documents/super_mario/build/CMakeFiles/super_mario.dir
-/home/viktoria/Documents/super_mario/build/CMakeFiles/edit_cache.dir
-/home/viktoria/Documents/super_mario/build/CMakeFiles/rebuild_cache.dir
-/home/viktoria/Documents/super_mario/build/CMakeFiles/super_mario_autogen_timestamp_deps.dir
-/home/viktoria/Documents/super_mario/build/CMakeFiles/super_mario_autogen.dir
+/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/super_mario.dir
+/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/edit_cache.dir
+/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/rebuild_cache.dir
+/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/super_mario_autogen_timestamp_deps.dir
+/home/runner/work/super_mario_biv/super_mario_biv/build/CMakeFiles/super_mario_autogen.dir

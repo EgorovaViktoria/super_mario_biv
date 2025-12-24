@@ -6,7 +6,7 @@
 namespace biv {
     class QtFlyingEnemy : public FlyingEnemy, public QtUIObjectRectAdapter {
         public:
-            QtFlyingEnemy(const Coord& top_left, const int width, const int height, Game* game);
+            QtFlyingEnemy(const Coord& top_left, const int width, const int height);
             void paint(QPainter& painter) const override;
     };
 }

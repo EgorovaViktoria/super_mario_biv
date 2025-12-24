@@ -1,8 +1,8 @@
 CMakeFiles/super_mario.dir/levels/second_level.cpp.o: \
- /home/viktoria/Documents/super_mario/src/levels/second_level.cpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/levels/second_level.cpp \
  /usr/include/stdc-predef.h \
- /home/viktoria/Documents/super_mario/src/levels/second_level.hpp \
- /home/viktoria/Documents/super_mario/src/levels/game_level.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/levels/second_level.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/levels/game_level.hpp \
  /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -16,8 +16,8 @@ CMakeFiles/super_mario.dir/levels/second_level.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
  /usr/include/c++/13/pstl/pstl_config.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /home/viktoria/Documents/super_mario/src/model/ui_factory.hpp \
- /home/viktoria/Documents/super_mario/src/controller/game.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/ui_factory.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/controller/game.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/c++/13/bits/functexcept.h \
@@ -56,12 +56,12 @@ CMakeFiles/super_mario.dir/levels/second_level.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/viktoria/Documents/super_mario/src/model/collisionable.hpp \
- /home/viktoria/Documents/super_mario/src/model/rect.hpp \
- /home/viktoria/Documents/super_mario/src/model/coord.hpp \
- /home/viktoria/Documents/super_mario/src/model/speed.hpp \
- /home/viktoria/Documents/super_mario/src/model/map_movable.hpp \
- /home/viktoria/Documents/super_mario/src/objects/mario.hpp \
- /home/viktoria/Documents/super_mario/src/model/movable.hpp \
- /home/viktoria/Documents/super_mario/src/model/game_map.hpp \
- /home/viktoria/Documents/super_mario/src/levels/third_level.hpp
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/collisionable.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/rect.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/coord.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/speed.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/map_movable.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/objects/mario.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/movable.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/game_map.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/levels/third_level.hpp

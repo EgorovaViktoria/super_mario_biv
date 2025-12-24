@@ -1,7 +1,7 @@
 CMakeFiles/super_mario.dir/controller/game.cpp.o: \
- /home/viktoria/Documents/super_mario/src/controller/game.cpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/controller/game.cpp \
  /usr/include/stdc-predef.h \
- /home/viktoria/Documents/super_mario/src/controller/game.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/controller/game.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -52,13 +52,13 @@ CMakeFiles/super_mario.dir/controller/game.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/viktoria/Documents/super_mario/src/model/collisionable.hpp \
- /home/viktoria/Documents/super_mario/src/model/rect.hpp \
- /home/viktoria/Documents/super_mario/src/model/coord.hpp \
- /home/viktoria/Documents/super_mario/src/model/speed.hpp \
- /home/viktoria/Documents/super_mario/src/model/map_movable.hpp \
- /home/viktoria/Documents/super_mario/src/objects/mario.hpp \
- /home/viktoria/Documents/super_mario/src/model/movable.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/collisionable.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/rect.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/coord.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/speed.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/map_movable.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/objects/mario.hpp \
+ /home/runner/work/super_mario_biv/super_mario_biv/src/model/movable.hpp \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \

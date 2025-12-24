@@ -2,8 +2,8 @@
 
 using biv::QtFlyingEnemy;
 
-QtFlyingEnemy::QtFlyingEnemy(const Coord& top_left, const int width, const int height, Game* game)
-    : FlyingEnemy(top_left, width, height, game), QtUIObjectRectAdapter(top_left, width, height) {}
+QtFlyingEnemy::QtFlyingEnemy(const Coord& top_left, const int width, const int height)
+    : FlyingEnemy(top_left, width, height), QtUIObjectRectAdapter(top_left, width, height) {}
 
 void QtFlyingEnemy::paint(QPainter& painter) const {
     painter.setBrush(Qt::magenta);

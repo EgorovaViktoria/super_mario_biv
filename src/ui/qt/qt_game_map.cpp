@@ -44,13 +44,13 @@ biv::os::UserInput QtGameMap::get_input() {
 }
 
 void QtGameMap::keyPressEvent(QKeyEvent* event) {
-    if (auto input = biv::os::unix::map_qt_key(event->key())) {
+    if (auto input = biv::os::qt_os::map_qt_key(event->key())) {
         current_input = *input;
     }
 }
 
 void QtGameMap::keyReleaseEvent(QKeyEvent* event) {
-    if (auto input = biv::os::unix::map_qt_key(event->key())) {
+    if (auto input = biv::os::qt_os::map_qt_key(event->key())) {
         if (current_input == *input) {
             current_input = biv::os::UserInput::NO_INPUT;
         }

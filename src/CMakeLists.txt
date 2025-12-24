@@ -59,6 +59,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/ui/qt"
     "${CMAKE_CURRENT_SOURCE_DIR}/ui/qt/ui_objects"
     "${CMAKE_CURRENT_SOURCE_DIR}/os_controls"
+    "${CMAKE_CURRENT_SOURCE_DIR}/os_controls/os_api"
     "${CMAKE_CURRENT_SOURCE_DIR}/os_controls/unix/qt_input"
 )
 

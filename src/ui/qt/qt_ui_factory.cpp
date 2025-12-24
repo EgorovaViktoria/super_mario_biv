@@ -42,7 +42,7 @@ void QtUIFactory::create_enemy(const Coord& top_left, const int width, const int
 }
 
 void QtUIFactory::create_flying_enemy(const Coord& top_left, const int width, const int height) {
-    QtFlyingEnemy* enemy = new QtFlyingEnemy(top_left, width, height, game);
+    QtFlyingEnemy* enemy = new QtFlyingEnemy(top_left, width, height);
     flying_enemies.push_back(enemy);
     game->add_map_movable(enemy);
     game->add_movable(enemy);
@@ -98,10 +98,6 @@ void QtUIFactory::create_ship(const Coord& top_left, const int width, const int 
     game->add_map_movable(ship);
     game->add_static_obj(ship);
     game_map->add_obj(ship);
-}
-
-void QtUIFactory::finalize_level() {
-    game->set_level_end_to_last_static();
 }
 
 biv::GameMap* QtUIFactory::get_game_map() {
